@@ -244,7 +244,7 @@ function initContactForm() {
       }
     } catch {
       statusEl.textContent =
-        'Une erreur est survenue lors de l\'envoi. Vous pouvez nous écrire directement à contact@rija-patrimoine.fr.';
+        'Une erreur est survenue lors de l\'envoi. Vous pouvez m\'écrire directement à rijaandria.pro@gmail.com.';
       statusEl.className = 'form-status is-error';
     } finally {
       submitBtn.disabled = false;

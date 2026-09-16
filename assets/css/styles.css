@@ -175,13 +175,6 @@ input, select, textarea {
   margin-bottom: 1rem;
 }
 
-.expertise-icon {
-  width: 32px;
-  height: 32px;
-  color: var(--forest-600);
-  margin-bottom: 1rem;
-}
-
 .solution-icon {
   width: 32px;
   height: 32px;
@@ -895,73 +888,14 @@ input, select, textarea {
   color: rgba(245, 240, 230, 0.8);
 }
 
-.expertises {
-  background: var(--sand);
-}
-
-.expertise-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 2rem;
-}
-
-@media (max-width: 768px) {
-  .expertise-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-.expertise-card {
-  background: var(--paper);
-  border: 1px solid var(--line);
-  border-radius: 14px;
-  padding: 2rem;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-@media (hover: hover) {
-  .expertise-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 8px 24px rgba(20, 38, 31, 0.12);
-  }
-}
-
-.expertise-title {
-  font-size: 1.25rem;
-  margin-bottom: 0.75rem;
-}
-
-.expertise-text {
-  color: var(--muted);
-  font-size: 0.95rem;
-  margin-bottom: 1.5rem;
-  line-height: 1.6;
-}
-
-.tag-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.75rem;
-}
-
-.tag {
-  display: inline-block;
-  background: var(--sand-200);
-  color: var(--text);
-  padding: 0.5rem 1rem;
-  border-radius: 8px;
-  font-size: 0.8125rem;
-  font-weight: 500;
-}
-
 .solutions {
   background: var(--paper);
 }
 
 .solutions-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1.5rem;
   margin-bottom: 2rem;
 }
 
@@ -1000,28 +934,7 @@ input, select, textarea {
 .solution-text {
   color: var(--muted);
   font-size: 0.95rem;
-  margin-bottom: 1.5rem;
   line-height: 1.6;
-}
-
-.solution-list {
-  display: flex;
-  flex-direction: column;
-  gap: 0.75rem;
-}
-
-.solution-list li {
-  color: var(--text);
-  font-size: 0.95rem;
-  padding-left: 1.5rem;
-  position: relative;
-}
-
-.solution-list li::before {
-  content: "▪";
-  position: absolute;
-  left: 0;
-  color: var(--brass-ink);
 }
 
 .disclaimer {
@@ -1524,9 +1437,24 @@ input, select, textarea {
   color: rgba(245, 240, 230, 0.9);
 }
 
-.footer-reg {
-  font-size: 0.75rem;
-  color: rgba(245, 240, 230, 0.5);
+.footer-mentions {
+  display: grid;
+  gap: 0.35rem;
+  padding-block: 1.5rem;
+  border-top: 1px solid rgba(245, 240, 230, 0.15);
+  font-size: 0.8125rem;
+  line-height: 1.6;
+  color: rgba(245, 240, 230, 0.65);
+}
+
+.footer-mentions a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.footer-mentions a:hover {
+  color: var(--brass-soft);
 }
 
 .js [data-reveal] {
